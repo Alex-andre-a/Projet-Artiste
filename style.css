@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.titre h1 {
+  font-family: "joan";
+  font-size: 3em;
+  text-shadow: 2px 1px 5px #c6c6c6;
+  letter-spacing: 1px;
+}
+
+.section1 {
+  height: 400px;
+}
+
+.section1-photo {
+  background-image: url(/assets/images/WallpaperDog-20403459.jpg);
+  width: auto;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section2 {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+}
+
+.section2-titre {
+  height: 40px;
+}
+
+.section2-titre h2 {
+  font-family: "joan";
+  padding-top: 15px;
+  text-align: center;
+}
+
+.biographie p {
+  font-size: 0.9em;
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+
+.section3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 20px;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.section3 h4 {
+  padding: 10px 0;
+}
+
+.section3 .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  gap: 5px;
+}
+
+.section3 .left h2 {
+  font-family: "joan";
+}
+
+.section3 .albums {
+  padding: 0 20px;
+}
+
+.section3 .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  gap: 10px;
+}
+
+.section3-photo1 {
+  background-image: url(/assets/images/WallpaperDog-20468391.png);
+  height: 40%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.section3-photo2 {
+  background-image: url(/assets/images/WallpaperDog-20468376.jpg);
+  height: 100px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+
+footer {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .foot {
+  padding: 5px 0;
+}
+/*# sourceMappingURL=style.css.map */
