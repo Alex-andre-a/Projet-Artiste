@@ -65,8 +65,17 @@ nav {
     font-family: $fontsecondaire;
     font-size: 1.4em;
     text-shadow: $shadow;
-  }
-  &:hover {
+
+    &:hover {
+      background: linear-gradient(
+        90deg,
+        rgba(36, 19, 0, 1) 0%,
+        rgba(113, 113, 113, 1) 11%,
+        rgba(255, 255, 255, 1) 100%
+      );
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 }
 
@@ -74,6 +83,7 @@ nav {
   display: flex;
   flex-flow: column;
   align-items: center;
+  padding: 0 20px;
 
   .lignes {
     border: 1px solid white;
@@ -96,8 +106,12 @@ nav {
 
   .section3-titre {
     text-align: center;
-    font-family: $fontsecondaire;
     padding: 20px 0;
+
+    h2 {
+      font-family: $fontsecondaire;
+      text-shadow: $shadow;
+    }
   }
 }
 
@@ -278,6 +292,10 @@ footer {
   .section1 {
     height: 800px;
     margin-bottom: 30px;
+
+    .section1-photo {
+      background-position: 0 -120px;
+    }
   }
 
   .section2 {

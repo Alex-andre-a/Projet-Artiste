@@ -80,6 +80,13 @@ nav {
   text-shadow: 2px 1px 5px #c6c6c6;
 }
 
+.section2-titre a:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#241300), color-stop(11%, #717171), to(white));
+  background: linear-gradient(90deg, #241300 0%, #717171 11%, white 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .biographie {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,6 +98,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 20px;
 }
 
 .biographie .lignes {
@@ -117,8 +125,12 @@ nav {
 
 .section3 .section3-titre {
   text-align: center;
-  font-family: "joan";
   padding: 20px 0;
+}
+
+.section3 .section3-titre h2 {
+  font-family: "joan";
+  text-shadow: 2px 1px 5px #c6c6c6;
 }
 
 .left {
@@ -320,6 +332,9 @@ footer .foot {
   .section1 {
     height: 800px;
     margin-bottom: 30px;
+  }
+  .section1 .section1-photo {
+    background-position: 0 -120px;
   }
   .section2 {
     gap: 50px;
