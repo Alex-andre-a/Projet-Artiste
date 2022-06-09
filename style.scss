@@ -34,6 +34,7 @@ nav {
 
 .section1 {
   height: 400px;
+  margin-bottom: 25px;
 }
 
 .section1-photo {
@@ -55,11 +56,29 @@ nav {
 
 .section2-titre {
   height: 40px;
+  @include flex;
 
-  h2 {
+  a {
+    text-decoration: none;
+    width: auto;
+    height: auto;
     font-family: $fontsecondaire;
-    padding-top: 15px;
-    text-align: center;
+    font-size: 1.4em;
+    text-shadow: $shadow;
+  }
+  &:hover {
+  }
+}
+
+.biographie {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  .lignes {
+    border: 1px solid white;
+    width: 50%;
+    margin: 25px 0;
   }
 }
 
@@ -67,7 +86,6 @@ nav {
   font-size: 0.9em;
   text-align: center;
   padding: 0 20px;
-  margin-bottom: 10px;
 }
 
 // ************************************** SECTION 3 ****************************************
@@ -112,10 +130,6 @@ nav {
   flex-flow: column wrap;
   align-items: center;
 
-  .principaux-titres {
-    width: 250px;
-  }
-
   h4 {
     @include sous-titre;
   }
@@ -135,6 +149,8 @@ nav {
   }
 }
 
+// ********************************** FOOTER ****************************************
+
 footer {
   margin-top: 50px;
   display: flex;
@@ -142,5 +158,277 @@ footer {
 
   .foot {
     padding: 5px 0;
+  }
+}
+
+// ********************************** RESPONSIVE ****************************************
+
+@media screen and (min-width: 768px) {
+  .biographie .lignes {
+    margin: 35px 0;
+  }
+
+  .section3 .section3-titre {
+    padding: 50px 0;
+  }
+
+  .left {
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 50px;
+
+    .section3-photo1 {
+      margin: 0;
+    }
+  }
+
+  .right {
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 80px;
+
+    .section3-photo2 {
+      width: 300px;
+      background-position: 0 0;
+      margin: 0;
+    }
+  }
+}
+
+// ************************* 1024px **************************
+
+@media screen and (min-width: 1024px) {
+  nav {
+    height: 80px;
+  }
+
+  .titre h1 {
+    font-size: 4.5em;
+  }
+
+  .section1 {
+    height: 600px;
+  }
+
+  .section2 {
+    gap: 25px;
+
+    a {
+      font-size: 2em;
+    }
+  }
+
+  .biographie p {
+    font-size: 1.2em;
+  }
+
+  .section3 {
+    margin-top: 50px;
+
+    h4 {
+      @include sous-titre2;
+    }
+
+    .section3-titre {
+      padding: 50px 0;
+      font-size: 1.5em;
+    }
+  }
+
+  .left {
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 120px;
+    margin-bottom: 50px;
+
+    .section3-photo1 {
+      width: 350px;
+      height: 650px;
+      background-position: 0 0;
+      margin: 0;
+    }
+  }
+
+  .right {
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 120px;
+
+    .section3-photo2 {
+      height: 650px;
+      width: 350px;
+      background-position: -130px 0;
+      margin: 0;
+    }
+  }
+}
+
+// ************************* 1440px **************************
+
+@media screen and (min-width: 1440px) {
+  nav {
+    height: 100px;
+  }
+
+  .titre h1 {
+    font-size: 5.5em;
+  }
+
+  .section1 {
+    height: 800px;
+    margin-bottom: 30px;
+  }
+
+  .section2 {
+    gap: 50px;
+
+    a {
+      font-size: 2.5em;
+    }
+  }
+
+  .biographie p {
+    font-size: 1.4em;
+  }
+
+  .section3 {
+    margin-top: 40px;
+
+    .section3-titre {
+      font-size: 1.8em;
+    }
+  }
+
+  .left {
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 200px;
+    margin-bottom: 50px;
+
+    .albums {
+      font-size: 1.4em;
+    }
+
+    ul,
+    li {
+      padding: 15px 0;
+    }
+
+    .section3-photo1 {
+      width: 450px;
+      height: 850px;
+      background-position: 0 0;
+      margin: 0;
+    }
+  }
+
+  .right {
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 200px;
+
+    .principaux-titres {
+      font-size: 1.4em;
+    }
+
+    ul,
+    li {
+      padding: 15px 0;
+    }
+
+    .section3-photo2 {
+      height: 850px;
+      width: 450px;
+      background-position: -130px 0;
+      margin: 0;
+    }
+  }
+}
+
+// ************************* 2560px **************************
+
+@media screen and (min-width: 2560px) {
+  nav {
+    height: 120px;
+  }
+
+  .titre h1 {
+    font-size: 7em;
+  }
+
+  .section1 {
+    height: 1300px;
+    margin-bottom: 80px;
+  }
+
+  .section2 {
+    gap: 120px;
+
+    a {
+      font-size: 4.5em;
+    }
+  }
+
+  .biographie .lignes {
+    margin: 80px 0;
+  }
+
+  .biographie p {
+    font-size: 2.2em;
+  }
+
+  .section3 {
+    margin-top: 80px;
+
+    h4 {
+      @include sous-titre4;
+      padding: 20px 20px;
+      font-size: 1.5em;
+    }
+
+    .section3-titre {
+      font-size: 3.2em;
+      padding-bottom: 100px;
+    }
+  }
+
+  .left {
+    gap: 400px;
+    margin-bottom: 150px;
+
+    .albums {
+      font-size: 2.2em;
+    }
+
+    ul,
+    li {
+      padding: 20px 0;
+    }
+
+    .section3-photo1 {
+      width: 800px;
+      height: 1350px;
+      background-position: 0 -20px;
+    }
+  }
+
+  .right {
+    gap: 400px;
+
+    .principaux-titres {
+      font-size: 2.2em;
+    }
+
+    ul,
+    li {
+      padding: 20px 0;
+    }
+
+    .section3-photo2 {
+      height: 1350px;
+      width: 800px;
+      background-position: -130px 0;
+    }
   }
 }

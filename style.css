@@ -31,6 +31,7 @@ nav {
 
 .section1 {
   height: 400px;
+  margin-bottom: 25px;
 }
 
 .section1-photo {
@@ -59,19 +60,49 @@ nav {
 
 .section2-titre {
   height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.section2-titre h2 {
+.section2-titre a {
+  text-decoration: none;
+  width: auto;
+  height: auto;
   font-family: "joan";
-  padding-top: 15px;
-  text-align: center;
+  font-size: 1.4em;
+  text-shadow: 2px 1px 5px #c6c6c6;
+}
+
+.biographie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.biographie .lignes {
+  border: 1px solid white;
+  width: 50%;
+  margin: 25px 0;
 }
 
 .biographie p {
   font-size: 0.9em;
   text-align: center;
   padding: 0 20px;
-  margin-bottom: 10px;
 }
 
 .section3 {
@@ -139,10 +170,6 @@ nav {
           align-items: center;
 }
 
-.right .principaux-titres {
-  width: 250px;
-}
-
 .right h4 {
   font-family: "joan";
   border-left: 1px solid white;
@@ -178,5 +205,252 @@ footer {
 
 footer .foot {
   padding: 5px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .biographie .lignes {
+    margin: 35px 0;
+  }
+  .section3 .section3-titre {
+    padding: 50px 0;
+  }
+  .left {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 80px;
+    margin-bottom: 50px;
+  }
+  .left .section3-photo1 {
+    margin: 0;
+  }
+  .right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 80px;
+  }
+  .right .section3-photo2 {
+    width: 300px;
+    background-position: 0 0;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  nav {
+    height: 80px;
+  }
+  .titre h1 {
+    font-size: 4.5em;
+  }
+  .section1 {
+    height: 600px;
+  }
+  .section2 {
+    gap: 25px;
+  }
+  .section2 a {
+    font-size: 2em;
+  }
+  .biographie p {
+    font-size: 1.2em;
+  }
+  .section3 {
+    margin-top: 50px;
+  }
+  .section3 h4 {
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+  .section3 .section3-titre {
+    padding: 50px 0;
+    font-size: 1.5em;
+  }
+  .left {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 120px;
+    margin-bottom: 50px;
+  }
+  .left .section3-photo1 {
+    width: 350px;
+    height: 650px;
+    background-position: 0 0;
+    margin: 0;
+  }
+  .right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 120px;
+  }
+  .right .section3-photo2 {
+    height: 650px;
+    width: 350px;
+    background-position: -130px 0;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  nav {
+    height: 100px;
+  }
+  .titre h1 {
+    font-size: 5.5em;
+  }
+  .section1 {
+    height: 800px;
+    margin-bottom: 30px;
+  }
+  .section2 {
+    gap: 50px;
+  }
+  .section2 a {
+    font-size: 2.5em;
+  }
+  .biographie p {
+    font-size: 1.4em;
+  }
+  .section3 {
+    margin-top: 40px;
+  }
+  .section3 .section3-titre {
+    font-size: 1.8em;
+  }
+  .left {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 200px;
+    margin-bottom: 50px;
+  }
+  .left .albums {
+    font-size: 1.4em;
+  }
+  .left ul,
+  .left li {
+    padding: 15px 0;
+  }
+  .left .section3-photo1 {
+    width: 450px;
+    height: 850px;
+    background-position: 0 0;
+    margin: 0;
+  }
+  .right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 200px;
+  }
+  .right .principaux-titres {
+    font-size: 1.4em;
+  }
+  .right ul,
+  .right li {
+    padding: 15px 0;
+  }
+  .right .section3-photo2 {
+    height: 850px;
+    width: 450px;
+    background-position: -130px 0;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  nav {
+    height: 120px;
+  }
+  .titre h1 {
+    font-size: 7em;
+  }
+  .section1 {
+    height: 1300px;
+    margin-bottom: 80px;
+  }
+  .section2 {
+    gap: 120px;
+  }
+  .section2 a {
+    font-size: 4.5em;
+  }
+  .biographie .lignes {
+    margin: 80px 0;
+  }
+  .biographie p {
+    font-size: 2.2em;
+  }
+  .section3 {
+    margin-top: 80px;
+  }
+  .section3 h4 {
+    border-left: 4px solid white;
+    border-bottom: 4px solid white;
+    padding: 20px 20px;
+    font-size: 1.5em;
+  }
+  .section3 .section3-titre {
+    font-size: 3.2em;
+    padding-bottom: 100px;
+  }
+  .left {
+    gap: 400px;
+    margin-bottom: 150px;
+  }
+  .left .albums {
+    font-size: 2.2em;
+  }
+  .left ul,
+  .left li {
+    padding: 20px 0;
+  }
+  .left .section3-photo1 {
+    width: 800px;
+    height: 1350px;
+    background-position: 0 -20px;
+  }
+  .right {
+    gap: 400px;
+  }
+  .right .principaux-titres {
+    font-size: 2.2em;
+  }
+  .right ul,
+  .right li {
+    padding: 20px 0;
+  }
+  .right .section3-photo2 {
+    height: 1350px;
+    width: 800px;
+    background-position: -130px 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
