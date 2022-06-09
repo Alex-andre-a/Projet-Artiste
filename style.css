@@ -83,7 +83,7 @@ nav {
 .section2-titre a:hover {
   background: -webkit-gradient(linear, left top, right top, from(#241300), color-stop(11%, #717171), to(white));
   background: linear-gradient(90deg, #241300 0%, #717171 11%, white 100%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
